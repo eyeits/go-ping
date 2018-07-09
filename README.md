@@ -1,6 +1,6 @@
 # go-ping
 
-Fork by https://github.com//go-ping
+Fork by https://github.com/sparrc/go-ping
 Fixed the run command select high CPU utilization problem.
 
 [![GoDoc](https://godoc.org/github.com/sparrc/go-ping?status.svg)](https://godoc.org/github.com/sparrc/go-ping)
