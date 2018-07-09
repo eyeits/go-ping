@@ -291,6 +291,11 @@ func (p *Pinger) run() {
 	signal.Notify(c, syscall.SIGTERM)
 
 	for {
+		if p.Count > 0 && p.PacketsRecv >= p.Count {
+			close(p.done)
+			wg.Wait()
+			return
+		}
 		select {
 		case <-c:
 			close(p.done)
@@ -310,12 +315,6 @@ func (p *Pinger) run() {
 			err := p.processPacket(r)
 			if err != nil {
 				fmt.Println("FATAL: ", err.Error())
-			}
-		default:
-			if p.Count > 0 && p.PacketsRecv >= p.Count {
-				close(p.done)
-				wg.Wait()
-				return
 			}
 		}
 	}
