@@ -1,6 +1,6 @@
 # go-ping
 
-Fork by https://github.com/sparrc/go-ping
+Fork by https://github.com//go-ping
 Fixed the run command select high CPU utilization problem.
 
 [![GoDoc](https://godoc.org/github.com/sparrc/go-ping?status.svg)](https://godoc.org/github.com/sparrc/go-ping)
@@ -50,7 +50,7 @@ it calls the "receive" callback. When it's finished, it calls the "finish"
 callback.
 
 For a full ping example, see
-[cmd/ping/ping.go](https://github.com/sparrc/go-ping/blob/master/cmd/ping/ping.go)
+[cmd/ping/ping.go](https://github.com/eyeits/go-ping/blob/master/cmd/ping/ping.go)
 
 ## Installation:
 
@@ -61,7 +61,7 @@ go get github.com/eyeits/go-ping
 To install the native Go ping executable:
 
 ```bash
-go get github.com/sparrc/go-ping/...
+go get github.com/eyeits/go-ping/...
 $GOPATH/bin/ping
 ```
 
