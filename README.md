@@ -1,4 +1,8 @@
 # go-ping
+
+Fork by https://github.com/sparrc/go-ping
+Fixed the run command select high CPU utilization problem.
+
 [![GoDoc](https://godoc.org/github.com/sparrc/go-ping?status.svg)](https://godoc.org/github.com/sparrc/go-ping)
 [![Circle CI](https://circleci.com/gh/sparrc/go-ping.svg?style=svg)](https://circleci.com/gh/sparrc/go-ping)
 
@@ -51,7 +55,7 @@ For a full ping example, see
 ## Installation:
 
 ```
-go get github.com/sparrc/go-ping
+go get github.com/eyeits/go-ping
 ```
 
 To install the native Go ping executable:
